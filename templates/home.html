@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Home</title>
+</head>
+
+<nav class="navbar navbar-dark bg-dark navbar-fixed-top">
+    <a class="navbar-brand" href="#">Diabetic Disease Diagnosis</a>
+    <a class="navbar-brand" href="/decisiontree">Decision Tree</a>
+    <a class="navbar-brand" href="/knn">KNN</a>
+    <a class="navbar-brand" href="/mlp">MLP</a>
+    <a class="navbar-brand" href="/randomforest">RandomForest</a>
+    <a class="navbar-brand" href="/svm">Genetic Algorithm</a>
+	<a class="navbar-brand" href="/graph">Graph</a> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/main">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<body>
+    <marquee></marquee>
+    <div class="container-fluid" style="background-color: cyan;">
+        <div class="col-lg-12">
+                <form action="{{ url_for('result') }}" method="post">
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <label for=" pregnant">Number of times pregnant</label><br/>
+                                <input type="text" class="form-control" id="Number of times pregnant" name="Number of times pregnant" placeholder="Enter how many number of times pregnant"><br/>
+                                <label for="Plasma glucose concentration ">Plasma glucose concentration a 2 hours in an oral glucose tolerance test</label><br/>
+                                <input type="text" class="form-control" id="Plasma glucose concentration a 2 hours in an oral glucose tolerance test" name="Plasma glucose concentration a 2 hours in an oral glucose tolerance test" placeholder="Enter your Plasma glucose concentration value"><br/>
+                        
+                              <label for="Diastolic blood pressure ">Diastolic blood pressure (mm Hg)</label><br/>
+                                <input type="text" class="form-control" id="Diastolic blood pressure (mm Hg)" name="Diastolic blood pressure (mm Hg)" placeholder=" Enter your Diastolic blood pressure value in mm Hg"><br/>
+                        
+                              <label for="Triceps skin fold thickness (mm)">Triceps skin fold thickness (mm)</label><br/>
+                                <input type="text" class="form-control" id="Triceps skin fold thickness (mm)" name="Triceps skin fold thickness (mm)" placeholder=" Enter Your Triceps skin fold thickness value in mm"><br/>
+                        
+                              <label for="2-Hour serum insulin ">2-Hour serum insulin (mu U/ml)</label><br/>
+                                <input type="text" class="form-control" name="2-Hour serum insulin (mu U/ml)" placeholder="Enter your 2-Hour serum insulin value in mu U/ml"><br/>
+                        
+                              <label for="Body mass index ">Body mass index (weight in kg/(height in m)^2)</label><br/>
+                                <input type="text" class="form-control" name="Body mass index (weight in kg/(height in m)^2)" placeholder="Enter Your Body Mass Index Value"><br/>
+                        
+                              <label for="Diabetes pedigree function">Diabetes pedigree function</label><br/>
+                                <input type="text" class="form-control" id="Diabetes pedigree function" name="Diabetes pedigree function" placeholder=" Enter your Diabetes pedigree function value"><br/>
+                                
+                                <label for="AGE">Age (years)</label><br/>
+                                <input type="text" class="form-control" id="Age (years)" name="Age (years)" placeholder="Your age..">
+                              
+                               
+                        
+            <br/>
+                        <center>
+                            <button type="submit" class="btn btn-dark" value="submit">Submit</button>
+                        </center>
+                </form>
+            </div>
+			<div class="col-lg-4 col-md-4" >
+		       <div class="image">
+			   <img src="{{ user_image }}" alt="User Image" class="one">
+			   </div>
+			</div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<style>
+body {
+    background-color:coral;
+}
+
+.col-lg-4 {
+    color: #ffffff;
+}
+img.one {
+  height: 40%;
+  width: 150%;
+}
+</style>
+
+</html>
