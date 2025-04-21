@@ -403,4 +403,4 @@ def graph():
 	#cur = mysql.connection.cursor()
 	return render_template('index2.html', user_image = full_filename,data=dict)
 if __name__ == "__main__":
-	app.run(debug=True, port=1000)
+	app.run(debug=True, port=5000)
