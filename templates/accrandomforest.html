@@ -9,38 +9,68 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Diagnosis</title>
 </head>
-<nav class="navbar navbar-dark bg-dark">
+<!--<nav class="navbar navbar-dark bg-dark navbar-fixed-top">
     <a class="navbar-brand" href="#">Diabetic Disease Diagnosis</a>
-	 <a class="navbar-brand" href="/decisiontree">Decision Tree</a>
+    <a class="navbar-brand" href="/main">Home</a>
+    <a class="navbar-brand" href="/about">About</a>
+    <a class="navbar-brand" href="/decisiontree">Decision Tree</a>
     <a class="navbar-brand" href="/knn">KNN</a>
     <a class="navbar-brand" href="/mlp">MLP</a>
     <a class="navbar-brand" href="/randomforest">RandomForest</a>
     <a class="navbar-brand" href="/svm">Genetic Algorithm</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="/main">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
-            </li>
-        </ul>
-    </div>
+   
 </nav>
-<body style="background-color: cyan;">
+
+<body style="background-color: #b7b7e4;">
     
     <div class="jumbotron hero-nature" >
         <h1 class="hero-title">Accuracy:{{data['a']}} </h1></br></br>
-		<p style="color:green;">The Random forest or Random Decision Forest is a supervised Machine learning algorithm used for classification, regression, and other tasks using decision trees.
-The Random forest classifier creates a set of decision trees from a randomly selected subset of the training set. It is basically a set of decision trees (DT) from a randomly selected subset of the training set and then It collects the votes from different decision trees to decide the final prediction.</p>
+		<div style="background-color: #f0f8ff; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); font-family: Arial, sans-serif;">
+
+            <h2 style="color: #2e8b57; text-align: center;">🌲 Random Forest Algorithm</h2>
+        
+            <p style="color: #333; font-size: 18px; line-height: 1.6;">
+                <strong>Random Forest</strong>, also known as <strong>Random Decision Forest</strong>, is a powerful 
+                <strong>supervised machine learning algorithm</strong> used for both classification and regression tasks. 
+                It works by constructing multiple decision trees and combining their predictions to improve accuracy 
+                and reduce overfitting. 🌟
+            </p>
+        
+            <h3 style="color: #2e8b57;">⚙️ How Does Random Forest Work?</h3>
+            <ol style="color: #333; font-size: 18px; line-height: 1.6; padding-left: 20px;">
+                <li>🌿 The algorithm creates a set of decision trees from **randomly selected subsets** of the training data.</li>
+                <li>🔄 Each decision tree makes its own **individual prediction**.</li>
+                <li>🗳️ The final output is determined by **majority voting** (for classification) or **averaging** (for regression).</li>
+            </ol>
+        
+            <h3 style="color: #2e8b57;">✅ Advantages of Random Forest</h3>
+            <ul style="color: #333; font-size: 18px; line-height: 1.6; padding-left: 20px;">
+                <li>✔️ **Highly accurate and robust** due to ensemble learning.</li>
+                <li>✔️ **Reduces overfitting** by averaging multiple trees.</li>
+                <li>✔️ **Handles both categorical and numerical data**.</li>
+                <li>✔️ **Works well with large datasets** and complex models.</li>
+            </ul>
+        
+            <h3 style="color: #2e8b57;">📊 Applications of Random Forest</h3>
+            <ul style="color: #333; font-size: 18px; line-height: 1.6; padding-left: 20px;">
+                <li>🔹 Medical Diagnosis (e.g., cancer detection 🏥).</li>
+                <li>🔹 Fraud Detection in Banking 💰.</li>
+                <li>🔹 Image and Speech Recognition 🎙️📸.</li>
+                <li>🔹 Stock Market Prediction 📈.</li>
+            </ul>
+        
+            <p style="color: #333; font-size: 18px; line-height: 1.6; text-align: center;">
+                🚀 Random Forest is a versatile and efficient algorithm widely used in real-world applications. 
+                Its ability to handle large datasets and maintain high accuracy makes it a go-to choice for data scientists! 🌍✨
+            </p>
+        
+        </div>
+        
        
     </div>
     <style>
     div.jumbotron.hero-nature {
-        color: white;
+        color: black;
         text-align: center;
         background: url('bg.jpg');
         background-size: contain;
@@ -58,11 +88,141 @@ The Random forest classifier creates a set of decision trees from a randomly sel
         color: #ffffff;
     }
     </style>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
-</html>
+</html> -->
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-fixed-top">
+        <a class="navbar-brand" href="#">Diabetic Disease Diagnosis</a>
+        <a class="navbar-brand" href="/main">Home</a>
+        <a class="navbar-brand" href="/about">About</a>
+        <a class="navbar-brand" href="/decisiontree">Decision Tree</a>
+        <a class="navbar-brand" href="/knn">KNN</a>
+        <a class="navbar-brand" href="/mlp">MLP</a>
+        <a class="navbar-brand" href="/randomforest">RandomForest</a>
+        <a class="navbar-brand" href="/svm">Genetic Algorithm</a>
+       
+    </nav>
+    <div class="main-content">
+        <div class="header">
+            <h1> Random Forest Model </h1>
+        </div>
+    
+        <div class="jumbotron hero-nature">
+            <h1 class="hero-title">Accuracy: {{data['a']}}</h1>
+            <br><br>
+    
+            <div class="flash-card-container">
+                <div class="flash-card">
+                    <h3>What is a Random Forest Model?</h3>
+                    <p> <strong>Random Forest</strong>, also known as <strong>Random Decision Forest</strong>, is a powerful 
+                        <strong>supervised machine learning algorithm</strong> used for both classification and regression tasks. 
+                        It works by constructing multiple decision trees and combining their predictions to improve accuracy 
+                        and reduce overfitting.</p>
+                </div>
+    
+                <div class="flash-card">
+                    <h3>How Does a Random Forest Model Work?</h3>
+                    <p> Random Forest Model works by following these steps: </p>
+                    <ol>
+                        <li> The algorithm creates a set of decision trees from randomly selected subsets of the training data.</li>
+                        <li> Each decision tree makes its own individual prediction.</li>
+                        <li> The final output is determined by majority voting (for classification) or averaging (for regression).</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025  Random Forest Model | Developed for Machine Learning Applications</p>
+    </footer>
+    
+        <style>
+            /* Ensures full-page layout with footer at bottom */
+            html, body {
+                height: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                background-color: #b7b7e4;
+                font-family: Arial, sans-serif;
+            }
+    
+            /* Main content container grows to fill space */
+            .main-content {
+                flex: 1;
+                padding: 20px;
+                text-align: center;
+            }
+    
+            /* Navbar Styling */
+            .navbar {
+                margin-bottom: 10px;
+            }
+    
+            /* Flash Card Container */
+            .flash-card-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+            }
+    
+            /* Flash Card Styling */
+            .flash-card {
+                background: #ffffff;
+                padding: 20px;
+                max-width: 600px;
+                border-radius: 12px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+                text-align: center;
+            }
+    
+            /* Header Styling */
+            .header {
+                background: linear-gradient(135deg, #2b5876, #4e4376);
+                color: white;
+                text-align: center;
+                padding: 40px 20px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+    
+            /* Footer Stays at Bottom */
+            .footer {
+                background: #2b5876;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                width: 100%;
+                position: relative;
+            }
+    
+            h2, h3 {
+                color: #2e8b57;
+            }
+    
+            ul, ol {
+                padding-left: 20px;
+                font-size: 18px;
+                color: #333;
+                line-height: 1.6;
+                text-align: left;
+            }
+        </style> 
+       
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+    
+    </html> 
+    

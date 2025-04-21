@@ -9,63 +9,144 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Diagnosis</title>
 </head>
-<nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Diabetic Disease Diagnosis</a>
-	 <a class="navbar-brand" href="/decisiontree">Decision Tree</a>
-    <a class="navbar-brand" href="/knn">KNN</a>
-    <a class="navbar-brand" href="/mlp">MLP</a>
-    <a class="navbar-brand" href="/randomforest">RandomForest</a>
-    <a class="navbar-brand" href="/svm">Genetic Algorithm</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="/main">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-<body style="background-color: cyan;">
+
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-fixed-top">
+        <a class="navbar-brand" href="#">Diabetic Disease Diagnosis</a>
+        <a class="navbar-brand" href="/main">Home</a>
+        <a class="navbar-brand" href="/about">About</a>
+        <a class="navbar-brand" href="/decisiontree">Decision Tree</a>
+        <a class="navbar-brand" href="/knn">KNN</a>
+        <a class="navbar-brand" href="/mlp">MLP</a>
+        <a class="navbar-brand" href="/randomforest">RandomForest</a>
+        <a class="navbar-brand" href="/svm">Genetic Algorithm</a>
+       
+    </nav>
+    <div class="main-content">
+        <div class="header">
+            <h1> Genetic Algorithm </h1>
+        </div>
     
-    <div class="jumbotron hero-nature">
-        <h1 class="hero-title">Accuracy:{{data['a']}} </h1></br></br>
-        <p style="color: blue;"> Best Feature for prediction </p>
-        <p style="color: brown;">GLUCOSE , BMI , AGE, DIABETIC PEDIGREE FUNCTION</p>
-		<p style="color:green;">Genetic Algorithm is a supervised machine learning algorithm used for both classification and regression. ... The objective of Genetic Algorithm  is to find a hyperplane in an N-dimensional space that distinctly classifies the data points.</p>
-        
-        
+        <div class="jumbotron hero-nature">
+            <h1 class="hero-title">Accuracy: {{data['a']}}</h1>
+            <br><br>
+    
+            <div class="flash-card-container">
+                <div class="flash-card">
+                    <h3>What is a Genetic Algorithm ?</h3>
+                    <p> <strong>Genetic Algorithm (GA)</strong> is a powerful <strong>supervised machine learning algorithm</strong> 
+                        used for both classification and regression tasks. Inspired by the process of natural selection, GA 
+                        optimizes solutions by evolving a population of potential solutions through <strong>selection, crossover, 
+                        and mutation</strong>. </p>
+                </div>
+                <div class="flash-card">
+                    <h3>Best Features for Prediction</h3>
+                    <ol>
+                        <li> GLUCOSE</li>
+                        <li>BMI</li>
+                        <li>AGE</li>
+                        <li>DIABETIC PEDIGREE FUNCTION</li>
+                    </ol>
+                </div>
+                <div class="flash-card">
+                    <h3>How Does a Genetic Algorithm Work?</h3>
+                    <p> Random Forest Model works by following these steps: </p>
+                    <ol>
+                        <li> Initializes a population of potential solutions.</li>
+                        <li>Evaluates fitness of each individual.</li>
+                        <li> Uses selection, crossover, and mutation to evolve better solutions.</li>
+                        <li>Converges towards an optimal solution over generations.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
     
-    <style>
-    div.jumbotron.hero-nature {
-        color: white;
-        text-align: center;
-        background: url('bg.jpg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
-    body {
-      background-color: #626269;
-    }
-
-    .col-lg-4 {
-        color: #ffffff;
-    }
-    </style>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
-
-</html>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025  Genetic Algorithm Model | Developed for Machine Learning Applications</p>
+    </footer>
+    
+        <style>
+            /* Ensures full-page layout with footer at bottom */
+            html, body {
+                height: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                background-color: #b7b7e4;
+                font-family: Arial, sans-serif;
+            }
+    
+            /* Main content container grows to fill space */
+            .main-content {
+                flex: 1;
+                padding: 20px;
+                text-align: center;
+            }
+    
+            /* Navbar Styling */
+            .navbar {
+                margin-bottom: 10px;
+            }
+    
+            /* Flash Card Container */
+            .flash-card-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+            }
+    
+            /* Flash Card Styling */
+            .flash-card {
+                background: #ffffff;
+                padding: 20px;
+                max-width: 600px;
+                border-radius: 12px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+                text-align: center;
+            }
+    
+            /* Header Styling */
+            .header {
+                background: linear-gradient(135deg, #2b5876, #4e4376);
+                color: white;
+                text-align: center;
+                padding: 40px 20px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+    
+            /* Footer Stays at Bottom */
+            .footer {
+                background: #2b5876;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                width: 100%;
+                position: relative;
+            }
+    
+            h2, h3 {
+                color: #2e8b57;
+            }
+    
+            ul, ol {
+                padding-left: 20px;
+                font-size: 18px;
+                color: #333;
+                line-height: 1.6;
+                text-align: left;
+            }
+        </style> 
+       
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+    
+    </html> 
+    

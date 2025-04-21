@@ -12,66 +12,160 @@
 
 <nav class="navbar navbar-dark bg-dark navbar-fixed-top">
     <a class="navbar-brand" href="#">Diabetic Disease Diagnosis</a>
+    <a class="navbar-brand" href="/main">Home</a>
+    <a class="navbar-brand" href="/about">About</a>
     <a class="navbar-brand" href="/decisiontree">Decision Tree</a>
     <a class="navbar-brand" href="/knn">KNN</a>
     <a class="navbar-brand" href="/mlp">MLP</a>
     <a class="navbar-brand" href="/randomforest">RandomForest</a>
     <a class="navbar-brand" href="/svm">Genetic Algorithm</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="/main">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
-            </li>
-        </ul>
-    </div>
+   
 </nav>
 
 <body>
-    <marquee></marquee>
-    <div class="container-fluid" style="background-color: cyan;">
-        <div class="col-lg-12">
-                
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6">
-							<h1 style="color:white;">Take action against prediabetes</h1>
-							<h4>Small changes in your diet and exercise can make a big difference with prediabetes. Assess your risk and change your course today.
-							</h4>
-							<h1 style="color:white;">Try something different</h1>
-							<h4>From diet and exercise to treatment and care, there are tons of practical things you can do every day to make your life easier. Here are just a few.</h4>
-							<h1 style="color:white;">Eat to thrive</h1>
-							<h4>Living with diabetes doesn’t mean you’re done eating foods you love. Start planning your meals and making healthy food choices and you can live the life you want.</h4>
-							</div>
-			<div class="col-lg-4 col-md-4" >
-		       <div class="image">
-			   <img src="{{ user_image }}" alt="User Image" class="one">
-			   </div>
-			</div>
-        </div>
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
-<style>
-body {
-    background-color:coral;
-}
 
-.col-lg-4 {
-    color: #ffffff;
-}
-img.one {
-  height: 40%;
-  width: 150%;
-}
+    <marquee style="color: white; background: linear-gradient(135deg, #2b5876, #4e4376); padding: 15px; font-size: 20px; font-weight: bold;">
+        🌿 Take control of your health today! Small lifestyle changes can lead to a healthier future. 🩺
+    </marquee>
+
+    <div class="container-fluid full-page">
+        <div class="row align-items-center">
+            <!-- Left Section with Information -->
+            <div class="col-lg-6 col-md-6 text-section">
+                <h1 class="title">🛡️ Take Action Against Prediabetes</h1>
+                <p style="font-size: 20px;">Prediabetes is a warning sign that you need to take action. By making small changes in your lifestyle, you can reduce your risk of developing type 2 diabetes.</p>
+
+                <h1 class="title">💡 Healthy Lifestyle Choices</h1>
+                <p style="font-size: 20px;">Managing prediabetes is easier than you think. Here are some key lifestyle changes:</p>
+                <ul>
+                    <li style="font-size: 20px;"> Eat a balanced diet rich in fiber and low in processed sugar.</li>
+                    <li style="font-size: 20px;"> Engage in at least 30 minutes of physical activity daily.</li>
+                    <li style="font-size: 20px;"> Regularly monitor your blood sugar levels.</li>
+                    <li style="font-size: 20px;">Get 7-8 hours of quality sleep each night.</li>
+                    <li style="font-size: 20px;"> Avoid smoking and limit alcohol consumption.</li>
+                </ul>
+
+                <h1 class="title">⚠️ Symptoms & Risk Factors</h1>
+                <p style="font-size: 20px;">If you notice any of the following symptoms, consult a doctor:</p>
+                <ul>
+                    <li style="font-size: 20px;"> Increased thirst and frequent urination.</li>
+                    <li style="font-size: 20px;">Constant fatigue and irritability.</li>
+                    <li style="font-size: 20px;"> Slow-healing wounds or frequent infections.</li>
+                    <li style="font-size: 20px;"> Blurry vision and sudden weight changes.</li>
+                </ul>
+            </div>
+
+            <!-- Right Section with Image -->
+            <div class="col-lg-6 col-md-6 text-center">
+                <img src="{{ url_for('static', filename='images/health.jpg') }}" alt="Healthy Lifestyle" style="width: 800px; height: 600px;">
+
+
+            </div>
+        </div>
+
+        <!-- Call-to-Action Section -->
+        <div class="row action-section" style="background: linear-gradient(135deg, #2b5876, #4e4376);">
+            <div class="col text-center">
+                <h2>🌟 Start Your Healthier Life Today! 🌟</h2>
+                <p>Don't wait for symptoms to take over. Start making healthier choices now!</p>
+                <button class="btn btn-warning btn-lg" onclick="window.location.href='/'">
+                    Take a Risk Assessment
+                </button>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- JavaScript & Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+<style>
+    /* Full-page coverage */
+    body {
+        background-color: #b7b7e4;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .full-page {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+
+    }
+
+    .text-section {
+        padding: 20px;
+        color: #333;
+    }
+
+    .title {
+        color: black;
+        font-weight: bold;
+        margin-bottom: 0px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .title:hover {
+        color: #6a0dad;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    ul li {
+        font-size: 18px;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    ul li::before {
+        content: "✔️";
+        color: green;
+        margin-right: 10px;
+    }
+
+    .image {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .image:hover {
+        transform: scale(1.05);
+    }
+
+    .action-section {
+        background-color: #6a0dad;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-lg {
+        font-size: 20px;
+        padding: 10px 30px;
+        border-radius: 30px;
+    }
+
+    .btn-warning:hover {
+        background-color: #f8c500;
+        color: black;
+    }
 </style>
+
 
 </html>

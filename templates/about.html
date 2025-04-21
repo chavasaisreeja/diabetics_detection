@@ -2,69 +2,170 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>About</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Diabetic Disease Diagnosis</title>
+
+    <!-- Custom Styles -->
+    <style>
+        /* Global Styles */
+        body {
+            background-color: #b7b7e4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2b5876, #4e4376);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        /* Card Styling */
+        .card {
+            border-radius: 12px;
+            border: none;
+            transition: 0.3s ease-in-out;
+            background: #f8f9fa;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-title {
+            color: #2b5876;
+            font-weight: bold;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background: #2b5876;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+    </style>
 </head>
 
-<nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Diabetic Disease Diagnosis</a>
-	 <a class="navbar-brand" href="/decisiontree">Decision Tree</a>
-    <a class="navbar-brand" href="/knn">KNN</a>
-    <a class="navbar-brand" href="/mlp">MLP</a>
-    <a class="navbar-brand" href="/randomforest">RandomForest</a>
-    <a class="navbar-brand" href="/svm">GA</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-<br>
-<br>
 <body>
-    <div class="jumbotron hero-nature">
-        <h1 class="hero-title">Diabetic Disease Diagnosis</h1>
-		<h3 class="hero-title">Details of Dabetics</h3>
+    <nav class="navbar navbar-dark bg-dark navbar-fixed-top">
+        <a class="navbar-brand" href="#">Diabetic Disease Diagnosis</a>
+        <a class="navbar-brand" href="/main">Home</a>
+        <a class="navbar-brand" href="/about">About</a>
+        <a class="navbar-brand" href="/decisiontree">Decision Tree</a>
+        <a class="navbar-brand" href="/knn">KNN</a>
+        <a class="navbar-brand" href="/mlp">MLP</a>
+        <a class="navbar-brand" href="/randomforest">RandomForest</a>
+        <a class="navbar-brand" href="/svm">Genetic Algorithm</a>
+       
+    </nav>
+    
+   
+    <div class="container content">
+        <div class="hero">
+            <h1>Diabetic Disease Diagnosis</h1>
+            <p>Understanding diabetes, symptoms, risks, and how to manage it effectively.</p>
         </div>
-        <style>
-        div.jumbotron.hero-nature {
-            color: white;
-            text-shadow: 1px 3px #000001;
-            text-align: center;
-            background: url('/static/bg.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            padding-top: 100px;
-            padding-bottom: 100px;
-        }
-        </style>
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <style>
-        body {
-            background-color: #626269;
-        }
 
-        .col-lg-4 {
-            color: #ffffff;
-        }
-        </style>
+        <h3 class="text-center mb-5">Details of Diabetes</h3>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card p-3">
+                    <h5 class="card-title">Understanding Diabetes</h5>
+                    <p class="card-text">Diabetes is a chronic metabolic disorder where the body does not produce enough insulin or cannot use it effectively, leading to high blood sugar levels.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card p-3">
+                    <h5 class="card-title">Types of Diabetes</h5>
+                    <ul class="card-text">
+                        <li><strong>Type 1:</strong> Autoimmune condition requiring insulin therapy.</li>
+                        <li><strong>Type 2:</strong> Linked to obesity, inactivity, and insulin resistance.</li>
+                        <li><strong>Gestational:</strong> Occurs during pregnancy and may increase Type 2 risk.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card p-3">
+                    <h5 class="card-title">Common Symptoms</h5>
+                    <ul class="card-text">
+                        <li>Excessive thirst</li>
+                        <li>Frequent urination</li>
+                        <li>Fatigue and weakness</li>
+                        <li>Blurred vision</li>
+                        <li>Slow wound healing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card p-3">
+                    <h5 class="card-title">Potential Complications</h5>
+                    <ul class="card-text">
+                        <li>Heart disease</li>
+                        <li>Kidney damage</li>
+                        <li>Nerve issues</li>
+                        <li>Vision loss</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card p-3">
+                    <h5 class="card-title">Managing Diabetes</h5>
+                    <ul class="card-text">
+                        <li>Healthy diet</li>
+                        <li>Regular exercise</li>
+                        <li>Blood sugar monitoring</li>
+                        <li>Proper medication</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card p-3">
+                    <h5 class="card-title">Early Detection Matters</h5>
+                    <p class="card-text">Early diagnosis and preventive measures can reduce complications and improve overall well-being.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Now fixed at bottom) -->
+    <div class="footer">
+        <p>© 2025 Diabetic Disease Diagnosis | All Rights Reserved</p>
+    </div>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
